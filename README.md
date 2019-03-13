@@ -16,3 +16,18 @@ ssh -l username seawulf.uri.edu
 ```
 
 The first time you log in you will be asked to reset your password.
+
+2.
+
+
+
+### GitHub notes
+I had to do the following in order to allow GithHub authentication (maybe because I'm using and organizational repo?):
+
+```
+git remote set-url origin "https://hdekk@github.com/uri-ai-lab/dgx-template.git"
+unset SSH_ASKPASS
+git push origin master
+```
+
+For convenience I added unset SSH_ASKPASS to my .bashrc
