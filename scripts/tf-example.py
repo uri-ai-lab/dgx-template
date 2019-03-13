@@ -1,4 +1,3 @@
-# Import `tensorflow`
 import tensorflow as tf
 
 # Initialize two constants
