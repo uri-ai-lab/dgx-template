@@ -1,3 +1,4 @@
+# Import `tensorflow`
 import tensorflow as tf
 
 # Initialize two constants
@@ -7,5 +8,11 @@ x2 = tf.constant([5,6,7,8])
 # Multiply
 result = tf.multiply(x1, x2)
 
+# Initialize the Session
+sess = tf.Session()
+
 # Print the result
-print(result)
+print(sess.run(result))
+
+# Close the Session
+sess.close()
