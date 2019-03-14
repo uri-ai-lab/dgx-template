@@ -28,7 +28,7 @@ git clone https://github.com/uri-ai-lab/dgx-template.git
 cd dgx-template
 sbatch --time=1:00:00 example.slurm ./scripts/helloworld.py
 ```
-After you run the sbatch command, you should see a message telling you that your batch job was submitted and giving you the job id. When your code has finished running, a slurm output file will appear in your working directory with the name ```slurm-nnnnn.out``` where ```nnnnn``` is the job id. The output file will contain messages and the output of any print statements. If your code doesn't generate an output file right away you can check the slurm queue by using the command ```squeue``` to the position of your job.
+After you run the sbatch command, you should see a message telling you that your batch job was submitted and giving you the job id. When your code has finished running, a slurm output file will appear in your working directory with the name ```slurm-nnnnn.out``` where ```nnnnn``` is the job id. The output file will contain messages and the output of any print statements. If your code doesn't generate an output file right away you can check the slurm queue by using the command ```squeue``` to find the position of your job in the queue.
 
 ## Step 3: Run your own code
 For convenience, you may want to write code on your own system and copy it to seawulf. I recommend using a version control system like git and GitHub to do this, but if your unfamiliar with this approach, you can use a command line tool like scp or a gui tool like WinSCP, Filezilla, Cyberduck, etc. to copy your files. If you are comfortable using emacs or vi you can, of course, directly edit your code on seawulf.  
@@ -41,5 +41,5 @@ sbatch --time=1:00:00 example.slurm mycode.py
 ```
 
 ## Getting help
-Don't hesitate to contact me by [email](hdekker@uri.edu) if you need help. 
+Don't hesitate to contact me at **hdekker@uri.edu** if you need help. If you find errors in these instructions, please submit an issue. 
 
